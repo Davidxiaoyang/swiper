@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximun=1.0,user-scaleble=0" name="viewport" />
+    <title></title>
+    <style>
+        html{
+            font-size: 87.5%;
+
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+        .page-wrapper{
+            width:100%;
+            height:21.428571428571427rem;
+            overflow: hidden;
+        }
+        .page-container{
+            width:400%;
+            height:100%;
+            /*transition:1s;*/
+        }
+        .page-content{
+            width:25%;
+            height:21.428571428571427rem;
+            float:left;
+        }
+        .page-content img{
+            width:100%;
+            height:100%;
+        }
+
+        /*.page-nav{
+            text-align: right;
+            margin-right:1.4285714285714286rem;
+            margin-top:0.7142857142857143rem;
+        }
+
+        .page-nav a{
+            display: inline-block;
+            width:2.142857142857143rem;
+            height:2.142857142857143rem;
+            line-height:2.142857142857143rem;
+            border-radius:50%;
+            background-color:#FFEB3B;
+            text-align: center;
+            text-decoration: none;
+            color:#fff;
+        }
+        .page-nav a.active{
+            background-color:red;
+        }*/
+
+    </style>
+
+</head>
+<body>
+    <section class="page-wrapper">
+        <section class="page-container">
+            <section class="page-content">
+                <img src="http://img1.imgtn.bdimg.com/it/u=1861283441,1807800896&fm=11&gp=0.jpg" alt=""/>
+            </section>
+            <section class="page-content">
+                <img src="http://img0.imgtn.bdimg.com/it/u=48252272,1629415252&fm=206&gp=0.jpg" alt=""/>
+            </section>
+            <section class="page-content">
+                <img src="http://imgsrc.baidu.com/forum/pic/item/3ac79f3df8dcd1004e9102b8728b4710b9122f1e.jpg" alt=""/>
+            </section>
+            <section class="page-content">
+                <img src="http://pic1.nipic.com/2008-08-12/200881211331729_2.jpg" alt=""/>
+            </section>
+        </section>
+    </section>
+
+
+    <!--<section class="page-nav">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+    </section>-->
+
+    <script type="text/javascript" src="./javascript/swiper.js"></script>
+    <script>
+        window.onload = function(){
+            var pageWrapper = document.querySelector('.page-wrapper');
+            var pageContainer = document.querySelector('.page-container');
+            var pageContent = document.getElementsByClassName('page-content');
+            swiper({pageWrapper:pageWrapper,pageContainer : pageContainer,pageContent:pageContent});
+
+
+
+        }
+    </script>
+
+</body>
+</html>
